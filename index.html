@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS SAKTHI TRAVELS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="userForm">
+        <h1 style="font-size: 2.5rem;">Welcome To DNS SAKTHI TRAVELS</h1>
+        <p>Please enter your details to proceed:</p>
+
+        <div id="userDetailsBox">
+            <form id="bookingForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+
+                <label for="mobile">Mobile Number:</label><br>
+                <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required pattern="[0-9]{10}"><br><br>
+
+                <label for="email">Email ID:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email ID" required><br><br>
+
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" placeholder="Your Location" required><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation and other sections -->
+    <div id="dashboard" class="navbar" style="display: none;">
+        <a href="javascript:void(0);" id="homeLink" onclick="showSection('home')">Home</a>
+        <a href="javascript:void(0);" id="aboutLink" onclick="showSection('about')">About Us</a>
+        <a href="javascript:void(0);" id="servicesLink" onclick="showSection('services')">Services</a>
+        <a href="javascript:void(0);" id="vehicleLink" onclick="showSection('vehicle')">Vehicles</a>
+        <a href="javascript:void(0);" id="bookingLink" onclick="showSection('booking')">Booking</a>
+        <a href="javascript:void(0);" id="ourJourneyLink" onclick="showSection('ourJourney')">Our Journey</a>
+        <a href="javascript:void(0);" id="contactLink" onclick="showSection('contact')">Contact Us</a>
+    </div>
+    
+    <!-- Display User Details Section -->
+    <div id="userDetails" style="display:none;">
+        <h2>Booking Details</h2>
+        <p><strong>Name:</strong> <span id="displayName"></span></p>
+        <p><strong>Mobile Number:</strong> <span id="displayMobile"></span></p>
+        <p><strong>Email ID:</strong> <span id="displayEmail"></span></p>
+        <p><strong>Location:</strong> <span id="displayLocation"></span></p>
+    </div>
+
+    <div id="home" class="section" style="display: none;">
+        <h2>Home</h2>
+        <p style="color: white;">Welcome to DNS SAKTHI TRAVELS, your perfect travel partner for unforgettable experiences in Ooty.</p>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <p style="color: white;">We are a travel company located in the scenic hill station of Ooty, specializing in guided tours of the Nilgiri Mountains, serene lakes, and lush tea gardens.</p>
+    </div>
+
+    <div id="services" class="section">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Guided Tours</li>
+            <p style="color: white;">You would be guided to a particular package plan which was made by us to explore maximum number of places to visit in your trip</p>
+            <li>Custom Travel Packages</li>
+            <p style="color: white;">The tour will be planned by you and we would make the plan execute as per your happiness</p>
+            <li>Adventure Sports</li>
+            <p style="color: white;">It includes a vehicle safari inside the forest to visit the wildlife animals living in the deep forest</p>
+            <li>Nature Walks</li>
+            <p style="color: white;">The nature walk will be like a trekking inside the hills to visit fabulous viewpoints for sunset or sunrise</p>
+        </ul>
+    </div>
+
+    <div id="vehicle" class="section">
+        <h2>Vehicles</h2>
+        <p style="color: white;">We offer a range of vehicles for your travel needs, from taxis to larger vehicles for group tours.</p>
+        <div class="vehicle-images">
+            <img src="img/WhatsApp Image 2024-11-11 at 11.07.46_ce2bfe12.jpg" alt="Vehicle 1">
+            <img src="img/WhatsApp Image 2024-11-11 at 11.07.46_e7f2e589.jpg" alt="Vehicle 2">
+            <img src="img/WhatsApp Image 2024-11-11 at 11.07.47_0ef942a2.jpg" alt="Vehicle 3">
+            <img src="img/WhatsApp Image 2024-11-11 at 11.07.47_1eea0873.jpg" alt="Vehicle 4">
+            <img src="img/WhatsApp Image 2024-11-11 at 11.07.47_8e755654.jpg" alt="Vehicle 5">
+        </div>
+    </div>
+
+    <div id="booking" class="section">
+        <h2>Booking</h2>
+        <div class="booking-links">
+            <a href="https://www.redbus.in/travels/dns-sakthi-travels" target="_blank">RedBus</a>
+            <a href="https://in.via.com/bus-tickets/dns-sakthi-travels" target="_blank">Via.com</a>
+            <a href="https://www.goibibo.com/bus/dns-sakthi-travels-bus-booking-16716/" target="_blank">GoIbibo</a>
+            <a href="https://www.yatra.com/bus-operators-india/dns-sakthi-travels" target="_blank">Yatra</a>
+        </div>
+    </div>
+
+    <div id="ourJourney" class="section">
+        <h2>Our Journey</h2>
+        <p style="color: white;">DNS SAKTHI TRAVELS has been providing exceptional travel experiences since its inception. Over the years, we have expanded our services to cover all aspects of travel in and around the Nilgiri Hills, offering reliable transportation and memorable guided tours to thousands of satisfied customers.</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p style="color: white;">📞 Phone Number: <a href="tel:+919443077687" style="color: rgb(255, 0, 0); text-decoration: underline;">+91 9443077687</a></p>
+        <p style="color: white;">📧 Email: <a href="mailto:ootydnssakthitravels@gmail.com" style="color: rgb(255, 0, 0); text-decoration: underline;">ootydnssakthitravels@gmail.com</a></p>
+        <p style="color: white;">📍 Hotel Gangothiri Sunrise Complex, Mysore Road Bunk, Ooty, Tamil Nadu 643001
+            <a href="https://www.google.com/maps/place/DNS+SAKTHI+TRAVELS/@11.4138545,76.6982764,15z/data=!4m2!3m1!1s0x0:0x939ad8b472de91ea?sa=X&ved=1t:2428&ictx=111" target="_blank" style="color: rgb(255, 0, 0); text-decoration: underline;">(Link)</a>
+        </p>
+    </div>
+</body>
+
+</html>
